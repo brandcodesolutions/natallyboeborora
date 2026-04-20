@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Natally Boeborora | Ciência e Cultura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Menu Hamburguer -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img src="assets/images/logoverde.png" alt="Natally Boeborora" class="logo-img">
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">O que faço <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="guia-turismo.html">Guia de Turismo</a></li>
+            <li><a href="turismo-infantil.html">Turismo Infantil</a></li>
+            <li><a href="consultoria-turismo.html">Consultoria de Turismologa</a></li>
+            <li><a href="terapia-florestal.html">Terapia Florestal & Natureza</a></li>
+            <li><a href="palestras.html">Palestras</a></li>
+            <li><a href="trajetoria.html">Trajetória Profissional</a></li>
+          </ul>
+        </li>
+        <li><a href="#conclusao" class="nav-link">Consultoria</a></li>
+        <li><a href="https://wa.me/5565999999999" target="_blank" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Section 1: Hero #home -->
+    <section id="home" class="hero section">
+      <picture>
+        <source media="(max-width: 768px)" srcset="assets/images/bannermobile.png">
+        <img src="assets/images/natallybanner.png" alt="Natally Boeborora" class="hero-banner-img">
+      </picture>
+    </section>
+
+    <!-- Section 2: Sobre Natally -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text fade-in">
+            <h2>Quem é Natally Boeborora</h2>
+            <p>Guia de Turismo, Bióloga e Espeleóloga, com atuação especializada em experiências na natureza e em ambientes de cavernas.</p>
+            <p>Certificada em Terapia Florestal e atuante como pesquisadora em Ciências Ambientais, Natally une o conhecimento científico com a valorização da cultura e da biodiversidade.</p>
+            <a href="trajetoria.html" class="btn-saber-mais">Saber Mais</a>
+          </div>
+          <div class="about-image fade-in">
+            <img src="assets/images/quefaz.png" alt="Natally Boeborora">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: O que eu faço -->
+    <section id="servicos" class="section servicos-section">
+      <div class="container">
+        <div class="about-grid-reverse">
+          <div class="about-image fade-in">
+            <img src="assets/images/queme.png" alt="Serviços">
+          </div>
+          <div class="about-text fade-in">
+            <h2>O que eu faço por você</h2>
+            <p>Guio experiências transformadoras na natureza, unindo ciência, espeleoturismo e saberes ancestrais para promover autoconhecimento, cons<strong style="color: var(--green);">ciência</strong> ambiental e conexão profunda com a vida.</p>
+            <a href="https://wa.me/5565999999999?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20uma%20experiência" target="_blank" class="btn-agendar">Agendar Experiência</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Highlight -->
+    <section id="highlight" class="section">
+      <div class="container">
+        <h2>Turismo</h2>
+        <h3 style="text-align: center; color: var(--white); font-size: 1.6rem; margin-top: -2.5rem; margin-bottom: 2rem;">Ciência e Cultura</h3>
+
+        <!-- Carrossel de Imagens -->
+        <div class="carousel-wrapper fade-in">
+          <button class="carousel-btn prev" onclick="changeCarousel(-1)">
+            <img src="assets/images/icone2.png" alt="Voltar">
+          </button>
+
+          <div class="carousel">
+            <div class="carousel-inner">
+              <!-- Slide 1 - Chapada dos Guimarães -->
+              <div class="carousel-item active">
+                <img src="assets/images/carrossel1.jpg" alt="Chapada dos Guimarães">
+                <div class="carousel-overlay">
+                  <h3>CHAPADA DOS GUIMARÃES</h3>
+                </div>
+              </div>
+              <!-- Slide 2 -->
+              <div class="carousel-item">
+                <img src="assets/images/1.png" alt="Turismo 1">
+              </div>
+              <!-- Slide 3 -->
+              <div class="carousel-item">
+                <img src="assets/images/2.png" alt="Turismo 2">
+              </div>
+              <!-- Slide 4 -->
+              <div class="carousel-item">
+                <img src="assets/images/3.png" alt="Turismo 3">
+              </div>
+              <!-- Slide 5 -->
+              <div class="carousel-item">
+                <img src="assets/images/4.png" alt="Turismo 4">
+              </div>
+              <!-- Slide 6 -->
+              <div class="carousel-item">
+                <img src="assets/images/5.png" alt="Turismo 5">
+              </div>
+              <!-- Slide 7 -->
+              <div class="carousel-item">
+                <img src="assets/images/6.png" alt="Turismo 6">
+              </div>
+              <!-- Slide 8 -->
+              <div class="carousel-item">
+                <img src="assets/images/carrossel2.jpg" alt="Pantanal">
+                <div class="carousel-overlay">
+                  <h3>PANTANAL</h3>
+                </div>
+              </div>
+              <!-- Slide 9 -->
+              <div class="carousel-item">
+                <img src="assets/images/7.png" alt="Turismo 7">
+              </div>
+              <!-- Slide 10 -->
+              <div class="carousel-item">
+                <img src="assets/images/8.png" alt="Turismo 8">
+              </div>
+              <!-- Slide 11 -->
+              <div class="carousel-item">
+                <img src="assets/images/9.png" alt="Turismo 9">
+              </div>
+              <!-- Slide 12 -->
+              <div class="carousel-item">
+                <img src="assets/images/10.png" alt="Turismo 10">
+              </div>
+              <!-- Slide 13 -->
+              <div class="carousel-item">
+                <img src="assets/images/carrossel3.jpg" alt="Nobres">
+                <div class="carousel-overlay">
+                  <h3>NOBRES</h3>
+                </div>
+              </div>
+              <!-- Slide 14 -->
+              <div class="carousel-item">
+                <img src="assets/images/11.png" alt="Turismo 11">
+              </div>
+              <!-- Slide 15 -->
+              <div class="carousel-item carousel-item--video">
+                <video src="assets/images/12.mp4" muted loop playsinline></video>
+              </div>
+              <!-- Slide 16 -->
+              <div class="carousel-item">
+                <img src="assets/images/13.png" alt="Turismo 13">
+              </div>
+              <!-- Slide 17 -->
+              <div class="carousel-item carousel-item--video">
+                <video src="assets/images/14.mp4" muted loop playsinline></video>
+              </div>
+              <!-- Slide 18 -->
+              <div class="carousel-item">
+                <img src="assets/images/carrossel4.jpg" alt="Cuiabá">
+                <div class="carousel-overlay">
+                  <h3>CUIABÁ CITY TOUR</h3>
+                </div>
+              </div>
+              <!-- Slide 19 -->
+              <div class="carousel-item">
+                <img src="assets/images/15.png" alt="Turismo 15">
+              </div>
+              <!-- Slide 20 -->
+              <div class="carousel-item">
+                <img src="assets/images/16.png" alt="Turismo 16">
+              </div>
+              <!-- Slide 21 -->
+              <div class="carousel-item">
+                <img src="assets/images/17.png" alt="Turismo 17">
+              </div>
+            </div>
+
+            <!-- Indicadores -->
+            <div class="carousel-indicators">
+              <span class="indicator active" onclick="currentCarousel(0)"></span>
+              <span class="indicator" onclick="currentCarousel(1)"></span>
+              <span class="indicator" onclick="currentCarousel(2)"></span>
+              <span class="indicator" onclick="currentCarousel(3)"></span>
+              <span class="indicator" onclick="currentCarousel(4)"></span>
+              <span class="indicator" onclick="currentCarousel(5)"></span>
+              <span class="indicator" onclick="currentCarousel(6)"></span>
+              <span class="indicator" onclick="currentCarousel(7)"></span>
+              <span class="indicator" onclick="currentCarousel(8)"></span>
+              <span class="indicator" onclick="currentCarousel(9)"></span>
+              <span class="indicator" onclick="currentCarousel(10)"></span>
+              <span class="indicator" onclick="currentCarousel(11)"></span>
+              <span class="indicator" onclick="currentCarousel(12)"></span>
+              <span class="indicator" onclick="currentCarousel(13)"></span>
+              <span class="indicator" onclick="currentCarousel(14)"></span>
+              <span class="indicator" onclick="currentCarousel(15)"></span>
+              <span class="indicator" onclick="currentCarousel(16)"></span>
+              <span class="indicator" onclick="currentCarousel(17)"></span>
+              <span class="indicator" onclick="currentCarousel(18)"></span>
+              <span class="indicator" onclick="currentCarousel(19)"></span>
+              <span class="indicator" onclick="currentCarousel(20)"></span>
+            </div>
+          </div>
+
+          <button class="carousel-btn next" onclick="changeCarousel(1)">
+            <img src="assets/images/icone.png" alt="Avançar">
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 5: Conclusão #conclusao -->
+    <section id="conclusao" class="section">
+      <div class="container">
+        <h2>Consultoria</h2>
+        <div class="conclusao-text fade-in">
+          <p>Ofereço consultoria para criação e aprimoramento de produtos turísticos com foco em experiências autênticas, sustentáveis e de alto valor. Integro conhecimento científico, turismo de natureza, espeleoturismo e bem-estar na construção de roteiros que conectam pessoas, cultura e meio ambiente.</p>
+          <a href="#contato" class="btn-consultoria">Adquirir Consultoria</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <!-- Logo -->
+      <div class="footer-logo">
+        <img src="assets/images/logoverde.png" alt="Logo Natally Boeborora">
+      </div>
+
+      <!-- Redes Sociais -->
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-btn" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        <p>&copy; 2026 <span class="green-text">Natally Boeborora</span>. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

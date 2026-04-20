@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Turismo | Natally Boeborora</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@400;700;900&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Menu Hamburguer -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <img src="assets/images/logoverde.png" alt="Natally Boeborora" class="logo-img">
+      </div>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-dropdown">
+          <a href="#" class="nav-link">O que faço <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="guia-turismo.html">Guia de Turismo</a></li>
+            <li><a href="turismo-infantil.html">Turismo Infantil</a></li>
+            <li><a href="consultoria-turismo.html">Consultoria de Turismologa</a></li>
+            <li><a href="terapia-florestal.html">Terapia Florestal & Natureza</a></li>
+            <li><a href="palestras.html">Palestras</a></li>
+            <li><a href="trajetoria.html">Trajetória Profissional</a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#conclusao" class="nav-link">Consultoria</a></li>
+        <li><a href="https://wa.me/5565999999999" target="_blank" class="nav-link">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="service-hero"
+      style="background-image: url('assets/images/guiabanner.jpeg'); background-size: cover; background-position: center;">
+      <div class="service-hero-content fade-in">
+        <h1>Guia de Turismo</h1>
+        <h2 style="font-size: 1.1rem; font-weight: 500; letter-spacing: 0.05em; color: rgba(255,255,255,0.85); margin: 0.4rem 0 0.8rem;">Cadastur: 13.013405.96-0</h2>
+        <p>Experiências autênticas na natureza com conhecimento científico e saberes ancestrais</p>
+      </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="section">
+      <div class="container">
+        <div class="service-content fade-in">
+          <h2>Explorando a Natureza com Propósito</h2>
+          <p>Como guia de turismo especializada em espeleoturismo e experiências na natureza, ofereço passeios
+            transformadores que combinam:</p>
+
+          <ul class="service-list">
+            <li>Turismo de Natureza</li>
+            <li>Espeleoturismo</li>
+            <li>Turismo Científico</li>
+            <li>Turismo Pedagógico</li>
+            <li>Turismo de bem estar</li>
+            <li>Turismo de melhor idade</li>
+            <li>City tour</li>
+          </ul>
+
+          <p>Cada passeio é cuidadosamente planejado para promover autoconhecimento, consciência ambiental e uma conexão
+            profunda com a vida selvagem.</p>
+
+          <a href="https://wa.me/5565999999999?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20um%20passeio%20de%20turismo"
+            target="_blank" class="btn-agendar">Agendar Passeio</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section" style="background: var(--light-green);">
+      <div class="container">
+        <h2>O que torna meus passeios especiais</h2>
+        <div class="features-grid fade-in">
+          <div class="feature-card">
+            <h3>🌿 Conhecimento Científico</h3>
+            <p>Formação em Biologia e Espeleologia com pesquisa em Ciências Ambientais</p>
+          </div>
+          <div class="feature-card">
+            <h3>🏔️ Experiência Prática</h3>
+            <p>Anos de vivência em ambientes naturais e cavernas</p>
+          </div>
+          <div class="feature-card">
+            <h3>🌍 Sustentabilidade</h3>
+            <p>Práticas de turismo responsável e conservação ambiental</p>
+          </div>
+          <div class="feature-card">
+            <h3>💫 Transformação Pessoal</h3>
+            <p>Experiências desenhadas para promover autoconhecimento</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registros Section -->
+    <section class="section registros-section">
+      <div class="container">
+        <h2>Registros</h2>
+        <div class="registros-carousel-wrapper fade-in">
+          <button class="carousel-btn prev" onclick="changeRegistros(-1)">
+            <img src="assets/images/icone2.png" alt="Voltar">
+          </button>
+          <div class="registros-carousel">
+            <div class="registros-inner">
+              <div class="registros-item active">
+                <img src="assets/images/registro1.png" alt="Registro 1">
+              </div>
+              <div class="registros-item">
+                <img src="assets/images/registro2.png" alt="Registro 2">
+              </div>
+              <div class="registros-item">
+                <img src="assets/images/registro3.png" alt="Registro 3">
+              </div>
+              <div class="registros-item">
+                <img src="assets/images/registro4.png" alt="Registro 4">
+              </div>
+              <div class="registros-item">
+                <img src="assets/images/registro5.png" alt="Registro 5">
+              </div>
+            </div>
+            <div class="registros-indicators">
+              <span class="indicator active" onclick="goRegistros(0)"></span>
+              <span class="indicator" onclick="goRegistros(1)"></span>
+              <span class="indicator" onclick="goRegistros(2)"></span>
+              <span class="indicator" onclick="goRegistros(3)"></span>
+              <span class="indicator" onclick="goRegistros(4)"></span>
+            </div>
+          </div>
+          <button class="carousel-btn next" onclick="changeRegistros(1)">
+            <img src="assets/images/icone.png" alt="Avançar">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="assets/images/logoverde.png" alt="Logo Natally Boeborora">
+      </div>
+
+      <div class="footer-socials">
+        <a href="#" class="social-btn" title="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="#" class="social-btn" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="#" class="social-btn" title="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="#" class="social-btn" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 <span class="green-text">Natally Boeborora</span>. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
