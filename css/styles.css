@@ -107,14 +107,19 @@ img {
   background: var(--white);
   border-radius: 10px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-  min-width: 230px;
+  min-width: 260px;
   padding: 0.5rem 0;
   list-style: none;
-  z-index: 200;
+  z-index: 1001;
+  white-space: nowrap;
 }
 
 .nav-dropdown.active .dropdown-menu {
   display: block;
+}
+
+.dropdown-menu li {
+  width: 100%;
 }
 
 .dropdown-menu li a {
@@ -122,9 +127,11 @@ img {
   padding: 0.65rem 1.25rem;
   color: var(--gray);
   text-decoration: none;
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   font-weight: 500;
   transition: background 0.2s ease, color 0.2s ease;
+  white-space: normal;
+  line-height: 1.4;
 }
 
 .dropdown-menu li a:hover {
@@ -292,29 +299,64 @@ main {
     top: 72px;
     right: 0;
     left: auto;
-    width: 220px;
+    width: 260px;
     background: var(--white);
     flex-direction: column;
-    align-items: flex-end;
-    padding: 1rem 1.5rem 1.5rem;
-    box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+    padding: 0.75rem 0 1.25rem;
+    box-shadow: -4px 8px 20px rgba(0, 0, 0, 0.12);
     border-radius: 0 0 0 12px;
-    gap: 0.25rem;
+    gap: 0;
   }
 
   .nav-menu.open {
     display: flex;
   }
 
+  .nav-menu > li {
+    width: 100%;
+  }
+
+  .nav-menu > li > .nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 1.25rem;
+    width: 100%;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--light-gray);
+  }
+
+  .nav-menu > li:last-child > .nav-link {
+    border-bottom: none;
+  }
+
   .nav-dropdown .dropdown-menu {
     position: static;
     box-shadow: none;
-    padding: 0 0 0 1rem;
+    border-radius: 0;
+    min-width: unset;
+    width: 100%;
+    padding: 0;
+    background: var(--light-green);
     display: none;
+    white-space: normal;
   }
 
   .nav-dropdown.active .dropdown-menu {
     display: block;
+  }
+
+  .nav-dropdown .dropdown-menu li a {
+    padding: 0.6rem 1.25rem 0.6rem 2rem;
+    font-size: 0.88rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  .nav-dropdown .dropdown-menu li:last-child a {
+    border-bottom: none;
   }
 }
 
