@@ -15,17 +15,21 @@
 </head>
 
 <body>
-  <!-- Menu Hamburguer -->
+  <div class="sidebar-overlay"></div>
+
+  <!-- Botão hamburguer (fora da sidebar para sempre ficar visível) -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Sidebar -->
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
         <img src="assets/images/logoverde.png" alt="Natally Boeborora" class="logo-img">
       </div>
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-dropdown">
@@ -42,31 +46,47 @@
         <li><a href="#conclusao" class="nav-link">Consultoria</a></li>
         <li><a href="https://wa.me/556599033444" target="_blank" class="nav-link">Contato</a></li>
       </ul>
+      <button class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-right-from-bracket"></i>
+        Fechar
+      </button>
     </div>
   </nav>
 
   <main>
     <!-- Section 1: Hero #home -->
-    <section id="home" class="hero section">
-      <picture>
-        <source media="(max-width: 768px)" srcset="assets/images/bannermobile.png">
-        <img src="assets/images/natallybanner.png" alt="Natally Boeborora" class="hero-banner-img">
-      </picture>
+    <section id="home" class="hero">
+      <!-- Lado esquerdo: logo + título + botão -->
+      <div class="hero-content fade-in">
+        <img src="assets/images/logobranco.png" alt="Natally Boeborora" class="hero-logo">
+        <div class="hero-title">
+          <span>Turismo,</span>
+          <span>Ciência &</span>
+          <span>Cultura</span>
+        </div>
+        <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20uma%20experiência" target="_blank" class="btn-agendar hero-btn">
+          <i class="fab fa-whatsapp"></i> Agendar Experiência
+        </a>
+      </div>
+
+      <!-- Lado direito: imagem alinhada à margem direita -->
+      <div class="hero-image">
+        <img src="assets/images/banner.png" alt="Natally Boeborora">
+      </div>
+
+      <!-- Imagem decorativa no rodapé do banner -->
+      <img src="assets/images/bgbanner.png" alt="" class="hero-bg-bottom">
     </section>
 
     <!-- Section 2: Sobre Natally -->
     <section id="sobre" class="section">
       <div class="container">
-        <div class="about-grid">
-          <div class="about-text fade-in">
-            <h2>Quem é Natally Boeborora</h2>
-            <p>Guia de Turismo, Bióloga e Espeleóloga, com atuação especializada em experiências na natureza e em ambientes de cavernas.</p>
-            <p>Certificada em Terapia Florestal e atuante como pesquisadora em Ciências Ambientais, Natally une o conhecimento científico com a valorização da cultura e da biodiversidade.</p>
-            <a href="trajetoria.html" class="btn-saber-mais">Saber Mais</a>
-          </div>
-          <div class="about-image fade-in">
-            <img src="assets/images/quefaz.png" alt="Natally Boeborora">
-          </div>
+        <div class="about-text about-text--centered fade-in">
+          <h2>Quem é Natally Boeborora</h2>
+          <p>Nascida num território de uma antiga grande aldeia, hoje a capital de MT, Cuiabá.vim remanescente indígena do povo Boe Bororo, minha história e minha origem me move, me orienta e me inspira em tudo que faço. </p>
+          <p>Guia de Turismo (Cadastur: 13.013.405.96-0), Bióloga e Espeleóloga, com atuação especializada em experiências na natureza e pesquisa.</p>
+          <p>Utilizando ambientes naturais em todas minhas atividades prático e exerço como facilitadora minha formação de guia de terapia Florestal & Natureza e banho de floresta (Shirin Youku) com certificação Internacional pela Association of Nature and Forest Therapy – United States e atuante como pesquisadora mestre em Ciências Ambientais entrelaçando o conhecimento científico com a valorização da cultura e a importância da biodiversidade.</p>
+          <a href="trajetoria.html" class="btn-saber-mais">Saber Mais <i class="fas fa-arrow-right"></i></a>
         </div>
       </div>
     </section>
@@ -74,15 +94,10 @@
     <!-- Section 3: O que eu faço -->
     <section id="servicos" class="section servicos-section">
       <div class="container">
-        <div class="about-grid-reverse">
-          <div class="about-image fade-in">
-            <img src="assets/images/queme.png" alt="Serviços">
-          </div>
-          <div class="about-text fade-in">
-            <h2>O que eu faço por você</h2>
-            <p>Guio experiências transformadoras na natureza, unindo ciência, espeleoturismo e saberes ancestrais para promover autoconhecimento, cons<strong style="color: var(--green);">ciência</strong> ambiental e conexão profunda com a vida.</p>
-            <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20uma%20experiência" target="_blank" class="btn-agendar">Agendar Experiência</a>
-          </div>
+        <div class="about-text about-text--centered fade-in">
+          <h2>O que eu faço por você</h2>
+          <p>Ofereço consultoria para criação e aprimoramento de produtos turísticos com foco em experiências autênticas, sustentáveis e de alto valor. Integro conhecimento científico, turismo de natureza, espeleoturismo e bem-estar na construção de roteiros que conectam pessoas, cultura e meio ambiente.</p>
+          <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20uma%20experiência" target="_blank" class="btn-agendar"><i class="fab fa-whatsapp"></i> Agendar Experiência</a>
         </div>
       </div>
     </section>
@@ -238,19 +253,59 @@
       <div class="container">
         <h2>Consultoria</h2>
         <div class="conclusao-text fade-in">
-          <p>Ofereço consultoria para criação e aprimoramento de produtos turísticos com foco em experiências autênticas, sustentáveis e de alto valor. Integro conhecimento científico, turismo de natureza, espeleoturismo e bem-estar na construção de roteiros que conectam pessoas, cultura e meio ambiente.</p>
-          <a href="#contato" class="btn-consultoria">Adquirir Consultoria</a>
+          <p>Ofereço experiências autênticas, sustentáveis e de alto valor, integrando conhecimento científico, turismo de natureza, espeleoturismo e bem-estar na construção de vivências que conectam pessoas, cultura e meio ambiente.
+
+Para grupos diversos, famílias, público individual, instituições e demais interessados:
+
+Organizo e realizo experiências transformadoras na natureza, por meio de passeios que unem ciência, espeleoturismo e saberes ancestrais, promovendo autoconhecimento, consciência ambiental e uma conexão profunda com a vida.</p>
+          <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20uma%20experiência" target="_blank" class="btn-consultoria"><i class="fab fa-whatsapp"></i> Agendar Experiência</a>
         </div>
       </div>
     </section>
   </main>
+
+  <!-- Section 6: Parceiros -->
+  <section id="parceiros" class="section parceiros-section">
+    <div class="container">
+      <h2>Parceiros</h2>
+      <div class="parceiros-grid">
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro1.png" alt="Parceiro 1">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro2.png" alt="Parceiro 2">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro3.png" alt="Parceiro 3">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro4.png" alt="Parceiro 4">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro5.png" alt="Parceiro 5">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro6.png" alt="Parceiro 6">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro7.png" alt="Parceiro 7">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro8.png" alt="Parceiro 8">
+        </div>
+        <div class="parceiro-item">
+          <img src="assets/images/parceiro9.png" alt="Parceiro 9">
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer role="contentinfo">
     <div class="footer-container">
       <!-- Logo -->
       <div class="footer-logo">
-        <img src="assets/images/logoverde.png" alt="Logo Natally Boeborora">
+        <img src="assets/images/logobranco.png" alt="Logo Natally Boeborora">
       </div>
 
       <!-- Redes Sociais -->

@@ -15,17 +15,21 @@
 </head>
 
 <body>
-  <!-- Menu Hamburguer -->
+  <div class="sidebar-overlay"></div>
+
+  <!-- Botão hamburguer (fora da sidebar para sempre ficar visível) -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Sidebar -->
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
         <img src="assets/images/logoverde.png" alt="Natally Boeborora" class="logo-img">
       </div>
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-dropdown">
@@ -42,6 +46,10 @@
         <li><a href="index.html#conclusao" class="nav-link">Consultoria</a></li>
         <li><a href="https://wa.me/556599033444" target="_blank" class="nav-link">Contato</a></li>
       </ul>
+      <button class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-right-from-bracket"></i>
+        Sair
+      </button>
     </div>
   </nav>
 
@@ -59,57 +67,39 @@
       <div class="container">
         <div class="service-content fade-in">
           <h2>Quem é Natally Boeborora</h2>
-          <p>Natally é uma profissional multidisciplinar com formação sólida em ciências naturais e uma paixão
-            inabalável pela conservação ambiental e pela valorização da cultura.</p>
+          <p>Sou uma profissional dedicada à área ambiental, turística e científica, com atuação destacada na interface entre conservação da natureza, educação, sensibilização ambiental e turismo sustentável. Minha trajetória é marcada pelo compromisso com a valorização dos ecossistemas brasileiros, especialmente o bioma Cerrado e Pantanal incluindo as comunidades nelas inseridas.</p>
+          <p>Estimulo vivências das comunidades e visitantes com visão integrada e estratégica sobre o uso sustentável dos recursos naturais e pela disseminação do conhecimento científico de forma acessível à sociedade.</p>
+          <p>Há mais de 27 anos trabalho relacionando à espeleologia (ciência que estuda as cavernas), o uso público da natureza e educação institucional (escolas e universidades). Minha qualificação técnica é complementada por constante participação em cursos, capacitações e eventos científicos e culturais, o que fortalece minha atuação prática e profissional contínua.</p>
+          <p>Alinhando conhecimento científico à comunicação sensível e didática, busco contribuir com a importância da nossa espécie como parte do meio e também facilitar ao público interessado maior relação entre Homem &amp; Natureza envolvendo fatores mais profundos e até ancestralidade.</p>
+          <p>Cientificamente sigo sempre envolvida em iniciativas de pesquisas e conservação colaborando para a proteção de espécies e habitats, bem como para o fortalecimento da espeleologia regional em MT.</p>
+          <p>Dessa forma, Natally Boeborora se destaca como uma profissional multifacetada, que une ciência, educação e turismo em prol da conservação ambiental, exercendo papel relevante na promoção do conhecimento e na valorização do patrimônio natural brasileiro.</p>
 
           <h3 style="color: var(--green); margin-top: 2rem; margin-bottom: 1rem;">Formação Acadêmica</h3>
           <ul class="service-list">
             <li><strong>Biologia</strong> - Formação base em Ciências Naturais</li>
-            <li><strong>Espeleologia</strong> - Especialização em cavernas e ambientes subterrâneos</li>
-            <li><strong>Terapia Florestal</strong> - Certificação em práticas de bem-estar na natureza</li>
-            <li><strong>Pesquisa em Ciências Ambientais</strong> - Atuação como pesquisadora em biodiversidade</li>
+            <li><strong>Espeleologia</strong> - Pesquisa em cavernas e ambientes subterrâneos</li>
+            <li><strong>Guia de Terapia Florestal &amp; Natureza</strong> - Certificação Internacional em práticas de bem-estar na natureza e Ancestralidade</li>
+            <li><strong>Mestre em Ciências Ambientais</strong> - Atuação como pesquisadora em biodiversidade e Ambientes Naturais</li>
+            <li><strong>Doutoranda</strong> - "Resgate do uso de cavernas no funeral Boe" — caverna Aroe Jari, Chapada dos Guimarães</li>
           </ul>
 
           <h3 style="color: var(--green); margin-top: 2rem; margin-bottom: 1rem;">Experiência Profissional</h3>
           <p>Com anos de experiência no campo, Natally desenvolveu expertise em:</p>
           <ul class="service-list">
-            <li>Guiança de turismo especializado em natureza e cavernas</li>
+            <li>Guiamento de turismo especializado em natureza em diversas áreas: ecoturismo, turismo científico, espeleoturismo, turismo pedagógico, eventos, turismo cultural</li>
             <li>Condução de pesquisas em ecossistemas naturais</li>
-            <li>Desenvolvimento de experiências transformadoras na natureza</li>
+            <li>Organização e desenvolvimento de experiências transformadoras na natureza</li>
             <li>Consultoria em turismo sustentável e responsável</li>
             <li>Palestras e educação ambiental</li>
-          </ul>
-
-          <h3 style="color: var(--green); margin-top: 2rem; margin-bottom: 1rem;">Áreas de Atuação</h3>
-          <p>Natally atua em múltiplas áreas, integrando conhecimento científico com práticas humanizadas:</p>
-          <ul class="service-list">
-            <li><strong>Espeleoturismo</strong> - Exploração responsável de cavernas (Nobres, Chapada dos Guimarães,
-              Pantanal)</li>
-            <li><strong>Turismo de Natureza</strong> - Experiências imersivas em ambientes naturais preservados</li>
-            <li><strong>Terapia Florestal</strong> - Práticas de bem-estar e cura através da conexão com a natureza</li>
-            <li><strong>Consultoria Turística</strong> - Desenvolvimento de produtos e roteiros inovadores</li>
-            <li><strong>Educação Ambiental</strong> - Palestras e workshops sobre conservação e sustentabilidade</li>
-          </ul>
-
-          <h3 style="color: var(--green); margin-top: 2rem; margin-bottom: 1rem;">Filosofia Profissional</h3>
-          <p>Natally acredita que a verdadeira mudança acontece quando conectamos as pessoas com a natureza de forma
-            autêntica e transformadora. Sua abordagem combina:</p>
-          <ul class="service-list">
-            <li><strong>Rigor Científico</strong> - Fundamentado em pesquisa e conhecimento comprovado</li>
-            <li><strong>Autenticidade</strong> - Experiências genuínas e imersivas</li>
-            <li><strong>Sustentabilidade</strong> - Práticas responsáveis e conservação ambiental</li>
-            <li><strong>Humanidade</strong> - Foco no bem-estar integral das pessoas</li>
-            <li><strong>Valorização Cultural</strong> - Respeito aos saberes ancestrais e à diversidade</li>
+            <li>Reconexão Homem &amp; Natureza</li>
           </ul>
 
           <div
             style="background: var(--light-green); padding: 2rem; border-radius: 12px; margin-top: 3rem; text-align: center;">
-            <h3 style="color: var(--green); margin-bottom: 1rem;">Quer uma consultoria completa com Natally Boeborora?
-            </h3>
-            <p style="margin-bottom: 1.5rem;">Conecte-se para saber mais sobre como Natally pode transformar sua
-              experiência na natureza.</p>
+            <h3 style="color: var(--green); margin-bottom: 1rem;">Quer uma consultoria completa com Natally Boeborora?</h3>
+            <p style="margin-bottom: 1.5rem;">Conecte-se para saber mais sobre como Natally pode transformar sua experiência na natureza.</p>
             <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20conhecer%20mais%20sobre%20seus%20serviços"
-              target="_blank" class="btn-consultoria">Entrar em Contato</a>
+              target="_blank" class="btn-consultoria"><i class="fab fa-whatsapp"></i> Entrar em Contato</a>
           </div>
         </div>
       </div>
@@ -120,7 +110,7 @@
   <footer role="contentinfo">
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="assets/images/logoverde.png" alt="Logo Natally Boeborora">
+        <img src="assets/images/logobranco.png" alt="Logo Natally Boeborora">
       </div>
 
       <div class="footer-socials">

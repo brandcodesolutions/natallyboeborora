@@ -15,17 +15,21 @@
 </head>
 
 <body>
-  <!-- Menu Hamburguer -->
+  <div class="sidebar-overlay"></div>
+
+  <!-- Botão hamburguer (fora da sidebar para sempre ficar visível) -->
+  <button class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  <!-- Sidebar -->
   <nav class="navbar">
     <div class="navbar-container">
       <div class="navbar-logo">
         <img src="assets/images/logoverde.png" alt="Natally Boeborora" class="logo-img">
       </div>
-      <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
       <ul class="nav-menu" id="navMenu">
         <li><a href="index.html" class="nav-link">Home</a></li>
         <li class="nav-dropdown">
@@ -42,6 +46,10 @@
         <li><a href="index.html#conclusao" class="nav-link">Consultoria</a></li>
         <li><a href="https://wa.me/556599033444" target="_blank" class="nav-link">Contato</a></li>
       </ul>
+      <button class="sidebar-close" id="sidebarClose">
+        <i class="fas fa-right-from-bracket"></i>
+        Sair
+      </button>
     </div>
   </nav>
 
@@ -78,7 +86,7 @@
             profunda com a vida selvagem.</p>
 
           <a href="https://wa.me/556599033444?text=Olá%20Natally%2C%20gostaria%20de%20agendar%20um%20passeio%20de%20turismo"
-            target="_blank" class="btn-agendar">Agendar Passeio</a>
+            target="_blank" class="btn-agendar"><i class="fab fa-whatsapp"></i> Agendar Passeio</a>
         </div>
       </div>
     </section>
@@ -154,7 +162,7 @@
   <footer role="contentinfo">
     <div class="footer-container">
       <div class="footer-logo">
-        <img src="assets/images/logoverde.png" alt="Logo Natally Boeborora">
+        <img src="assets/images/logobranco.png" alt="Logo Natally Boeborora">
       </div>
 
       <div class="footer-socials">
